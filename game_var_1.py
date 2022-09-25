@@ -1,5 +1,6 @@
 # Yours and Mine
 # Твої та Мої
+# Strategic war game on Python
 import random
 
 y_warriors, m_warriors = 100, 0
