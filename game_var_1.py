@@ -1,3 +1,4 @@
+# Yours and Mine
 # Твої та Мої
 import random
 
@@ -193,3 +194,5 @@ while True:
         break
     day += 1
 print("\n" + "\t" * 4 + f".....GAME OVER.....")
+
+# Thank you for attention!
