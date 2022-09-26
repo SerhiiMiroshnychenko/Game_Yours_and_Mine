@@ -71,10 +71,10 @@ while True:
              },
         "barbarians": {"names": "варвари",
                        "number": (day // 10) * (100 + 10 * random.randint(0, 11)),
-                       "damage_ind": random.randint(1, 7),
+                       "damage_ind": random.randint(1, 7), # збільшити трохи урон + трохи кількість
                        },
         'nomads': {"names": "кочьовики",
-                   "number": (10 + random.randint(0, 21)) * day,
+                   "number": (10 + random.randint(0, 21)) * day, # зробити більшу кількість
                    "damage_ind": random.randint(1, 4),
 
                    },
@@ -84,7 +84,7 @@ while True:
                      },
         "black_hunters": {"names": "Чорні Мисливці",
                           "number": 1000 * day // 50,
-                          "damage_ind": random.randint(5, 21),
+                          "damage_ind": random.randint(5, 21), # зробити більше урон
                           }
     }
     enemy_number = enemies[enemy]["number"]  # кількість ворогі
