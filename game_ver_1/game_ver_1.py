@@ -60,8 +60,8 @@ while True:
         enemy = "barbarians"  # визначення хто вороги
     elif is_nomads == 0 and day > 0:  # умова
         enemy = "nomads"  # визначення хто вороги
-    elif m_warriors > y_warriors: # умова
-        enemy = "computer" # визначення хто вороги
+    elif m_warriors > y_warriors:  # умова
+        enemy = "computer"  # визначення хто вороги
 
     # довідник ворогів
     enemies = {
@@ -71,10 +71,10 @@ while True:
              },
         "barbarians": {"names": "варвари",
                        "number": (day // 10) * (100 + 10 * random.randint(0, 11)),
-                       "damage_ind": random.randint(1, 7), # збільшити трохи урон + трохи кількість
+                       "damage_ind": random.randint(1, 7),  # збільшити трохи урон + трохи кількість
                        },
-        'nomads': {"names": "кочьовики",
-                   "number": (10 + random.randint(0, 21)) * day, # зробити більшу кількість
+        'nomads': {"names": "кочовики",
+                   "number": (10 + random.randint(0, 21)) * day,  # зробити більшу кількість
                    "damage_ind": random.randint(1, 4),
 
                    },
@@ -84,10 +84,10 @@ while True:
                      },
         "black_hunters": {"names": "Чорні Мисливці",
                           "number": 1000 * day // 50,
-                          "damage_ind": random.randint(5, 21), # зробити більше урон
+                          "damage_ind": random.randint(5, 21),  # зробити більше урон
                           }
     }
-    enemy_number = enemies[enemy]["number"]  # кількість ворогі
+    enemy_number = enemies[enemy]["number"]  # кількість ворогів
     loots = {'': 0,
              "barbarians": enemy_number // 20,
              'nomads': enemy_number // 15,
@@ -187,7 +187,6 @@ while True:
     elif m_gold >= 20:
         m_gold -= 20
         m_warriors += 100
-
 
     # рахунок днів
     if day == 100:
