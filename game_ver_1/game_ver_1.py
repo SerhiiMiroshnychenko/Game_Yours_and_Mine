@@ -2,6 +2,7 @@
 # Твої та Мої
 # Strategic war game on Python
 import random
+from prettytable import PrettyTable
 
 y_warriors, m_warriors = 100, 0
 y_gold, m_gold = 0, 0
