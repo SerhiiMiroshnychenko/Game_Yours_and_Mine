@@ -2,7 +2,7 @@
 
 from random import randint
 from class_enemies import Enemies
-from class_warriors import Warriors
+from class_your_warriors import Warriors
 from main import my_warriors, my_gold
 
 
